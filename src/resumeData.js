@@ -23,14 +23,15 @@ let resumeData = {
         //   "className":"fa fa-twitter"
         // }
       ],
-    "aboutme":"I am currently a free-lance, front-end UX designing dude ya feel.",
+    "aboutme":"I'm currently a free-lance Front-End Developer & UX Designer. I work on personal projects and like to learn new languages and frameworks in my free time. ",
     "address":"Chula Vista, San Diego",
     "website":"rauleduardogarza.com",
     "phonenumber":" (916) 622-1032",
     "education":[
       {
         "UniversityName":"University of California, San Diego",
-        "specialization":"Cognitive Science / Human- Computer Interaction Specialization",
+        "specialization":"B.S. Cognitive Science / Human- Computer Interaction Specialization",
+        "minor": "Minor in Business",
         "MonthOfPassing":"July",
         "YearOfPassing":"2019",
         "Achievements":"Provost Honors 2018-2019"
@@ -59,7 +60,7 @@ let resumeData = {
         // "Achievements":"Some Achievements"
       }
     ],
-    "skillsDescription":"Your skills here",
+    "skillsDescription":"Skills I have & skills I'm learning!",
     "skills":[
       {
         "skillname":"HTML5"
@@ -82,15 +83,36 @@ let resumeData = {
     ],
     "portfolio":[
       {
+        "key":"1",
         "name":"Greek2Go",
         "description":"Web Application",
-        "imgurl":"images/greek2gologo.png"
+        "imgurl":"images/greek2gologo.png",
+        "contribution":"For Greek2Go, I contributed...",
+        "devskillsUsed":"HTML,CSS,JS,",
+        "projectDescription":"I was able to create the logo of Greek2Go through the use of Pixelmator Pro",
+        "projectImage":"images/greek2gologo.png",
+        "projectimageDescription":"This is the project image description",
+        "supportImage":"images/greek2gologo.png",
+        "supportimageDescription":"This is the support image description.",
+        "video":"https://www.youtube.com/embed/watch?v=VkKbJ9dntWY"
+
       },
       {
+        "key":"2",
         "name":"MusicMaster",
         "description":"Web Application",
-        "imgurl":"images/musicmasterlogo.png"
+        "imgurl":"images/musicmasterlogo.png",
+        "contribution":"For MusicMaster, I contributed...",
+        "deviceskillsUsed":"",
+        "projectDescription":"I was able to create the logo of MusicMaster through the use of Pixelmator Pro",
+        "projectImage":"images/musicmasterlogo.png",
+        "projectimageDescription":"This is the project image description",
+        "supportImage":"images/musicmasterlogo.png",
+        "supportimageDescription":"This is the support image description.",
+        "video":""
       },
+    ],
+
       // {
       //   "name":"project3",
       //   "description":"mobileapp",
@@ -101,7 +123,7 @@ let resumeData = {
       //   "description":"mobileapp",
       //   "imgurl":"images/portfolio/phone.jpg"
       // }
-    ],
+
     "testimonials":[
       {
         "description":"This is a sample testimonial",

@@ -33,12 +33,14 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/header-backgroundorignaldarkend.png) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
+   background-attachment: fixed;
    text-align: center;
    overflow: hidden;
 }
+
 
 /* vertically center banner section */
 header:before {
@@ -52,13 +54,32 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 10px;s
    text-align: center;
 }
 
+header #banner-img{
+  height: 59%;
+  width: 59%;
+  padding-left: 120px;
+}
+
+header #projecttitle{
+  color: white;
+}
+
+.popup-descriptions{
+  color: black;
+}
+
+
+
 header .banner-text {
-  padding-top: 130px;
-  width: 100%; }
+  padding-top: 1px;
+  width: 100%;
+  padding-bottom: 150px;
+}
+
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
@@ -208,10 +229,17 @@ ul#nav li.current a { color: #F06000; }
    color: #7A7A7A;
 }
 #about .profile-pic {
-   position: relative;
-   width: 210px;
-   height: 210px;
+   position: absolute;
+   width: 990px;
+   height: auto;
    border-radius: 100%;
+   border: solid;
+   left: 0px;
+
+}
+#about div #profpic{
+  padding-right: 25px;
+
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -423,9 +451,18 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   /* background: #ebeeee;
    padding-top: 90px;
-   padding-bottom: 60px;
+   padding-bottom: 60px; */
+   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+   background-size: cover !important;
+ -webkit-background-size: cover !important;
+   background-attachment: fixed;
+
+   position: relative;
+   min-height: 200px;
+   width: 100%;
+   overflow: hidden;
 }
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
@@ -435,6 +472,41 @@ ul#nav li.current a { color: #F06000; }
    margin-bottom: 48px;
    color: #95A3A3;
 }
+div #project-title{
+   font: 20px/34px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: white;
+   max-width: ;
+
+}
+
+a #back-button{
+  position: inherit;
+  right: inherit;
+  top: initial;
+  width: max-content;
+  color: black;
+  border: 1px solid #FB8F3D;
+  background: -webkit-linear-gradient(top, #FDA251, #FB8F3D);
+  background: -moz-linear-gradient(top, #FDA251, #FB8F3D);
+  background: -ms-linear-gradient(top, #FDA251, #FB8F3D);
+}
+
+ a #back-button:hover {
+    border: 1px solid #EB5200;
+    background: -webkit-linear-gradient(top, #FD924C, #F9760B);
+    background: -moz-linear-gradient(top, #FD924C, #F9760B);
+    background: -ms-linear-gradient(top, #FD924C, #F9760B);
+    box-shadow: 0 1px #EFEFEF;
+}
+
+ a #back-button:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
+}
+
+
+
 
 /* Portfolio Content */
 #portfolio-wrapper .columns {
@@ -513,15 +585,23 @@ div.coulumns.portfolio-item{
 }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
+
 }
+.modal-pic{
+  height: 30%;
+  width: 30%;
+  float: inherit;
+
+}
+
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {
    font: 24px/31px 'opensans-bold', sans-serif;
    color: #fff;
 }
 .portfolio-item .portfolio-item-meta p {
-   font: 22px/28px 'opensans-light', sans-serif;
-   color: #c6c7c7;
+   font: 14px/28px 'opensans-light', sans-serif;
+   color: white;
    margin-bottom: 0;
 }
 
@@ -540,7 +620,7 @@ div.coulumns.portfolio-item{
 /* popup modal */
 .popup-modal {
 	max-width: 550px;
-	background: #fff;
+	background: black;
 	position: relative;
 	margin: 0 auto;
 }
@@ -813,6 +893,17 @@ call-to-action .button {
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
+
+.contacticon #text{
+  display: inline-block;
+  height: 100px;
+  width:100px;
+}
+
+
+
+
+
 #contact {
    background: #191919;
    padding-top: 96px;
@@ -846,8 +937,15 @@ call-to-action .button {
 #contact h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #EBEEEE;
-   margin-bottom: 6px;
+   margin-bottom: 40px;
 }
+.mailto{
+
+  width:100px;
+  height:20px;
+}
+
+
 #contact p.lead {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
